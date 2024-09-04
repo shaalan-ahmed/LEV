@@ -2,7 +2,7 @@ user1@user:~ lev help
     store your password safely with Locally Encrypted Vault (LEV)
 
     <options>
-        help -> look at options
+        help -> look at options 
 
         new -> register new user
             usage -> new <username> <password>
@@ -15,8 +15,8 @@ user1@user:~ lev help
 
         exit -> quit lev
 
-user1@user:~ lev -n john "john's password"
-user1@user:~ lev -u john "john's password"
+user1@user:~ lev new john "john's password"
+user1@user:~ lev login john "john's password"
 
 lev@john: help
     <options>
