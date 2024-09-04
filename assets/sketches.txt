@@ -15,10 +15,10 @@ user1@user:~ safepwd help
 
         exit -> quit safepwd
 
-user1@user:~ safepwd -n pippo "password di pippo"
-user1@user:~ safepwd -u pippo "password di pippo"
+user1@user:~ safepwd -n john "password di pippo"
+user1@user:~ safepwd -u john "password di pippo"
 
-safepwd@pippo: help
+safepwd@john: help
     <options>
         list -> list entries
             usage -> list
