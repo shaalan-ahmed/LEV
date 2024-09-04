@@ -1,5 +1,5 @@
-user1@user:~ safepwd help
-    store your password safely with safepwd
+user1@user:~ lev help
+    store your password safely with Locally Encrypted Vault (LEV)
 
     <options>
         help -> look at options
@@ -13,12 +13,12 @@ user1@user:~ safepwd help
         delete -> delete existing user
             usage -> delete <username> <password>
 
-        exit -> quit safepwd
+        exit -> quit lev
 
-user1@user:~ safepwd -n john "john's password"
-user1@user:~ safepwd -u john "john's password"
+user1@user:~ lev -n john "john's password"
+user1@user:~ lev -u john "john's password"
 
-safepwd@john: help
+lev@john: help
     <options>
         list -> list entries
             usage -> list
@@ -35,4 +35,4 @@ safepwd@john: help
         edit -> edit existing entry
             usage -> edit <EntryName>
 
-        exit -> quit safepwd
+        exit -> quit lev
