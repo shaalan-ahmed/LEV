@@ -1,16 +1,17 @@
-user1@user:~ safepwd -h
+user1@user:~ safepwd help
     store your password safely with safepwd
 
     <options>
-        -h -> look at options
+        help -> look at options
 
-        -n -> register new user
-            usage -> -n <username> <password>
+        new -> register new user
+            usage -> new <username> <password>
 
-        -u -> login to existing user
-            usage -> -u <username> <password>
+        login -> login to existing user
+            usage -> login <username> <password>
 
-        -nu -> register new user if not yet registred and login to its account
+        delete -> delete existing user
+            usage -> delete <username> <password>
 
         exit -> quit safepwd
 
