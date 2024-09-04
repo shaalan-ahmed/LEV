@@ -1,0 +1,37 @@
+user1@user:~ safepwd -h
+    store your password safely with safepwd
+
+    <options>
+        -h -> look at options
+
+        -n -> register new user
+            usage -> -n <username> <password>
+
+        -u -> login to existing user
+            usage -> -u <username> <password>
+
+        -nu -> register new user if not yet registred and login to its account
+
+        exit -> quit safepwd
+
+user1@user:~ safepwd -n pippo "password di pippo"
+user1@user:~ safepwd -u pippo "password di pippo"
+
+safepwd@pippo: help
+    <options>
+        list -> list entries
+            usage -> list
+
+        add -> add new entry
+            usage -> add
+
+        rm -> remove existing entry
+            usage -> rm <EntryName>
+
+        search -> prints entry
+            usage -> search <EntryName>
+
+        edit -> edit existing entry
+            usage -> edit <EntryName>
+
+        exit -> quit safepwd
