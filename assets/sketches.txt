@@ -15,8 +15,8 @@ user1@user:~ safepwd help
 
         exit -> quit safepwd
 
-user1@user:~ safepwd -n john "password di pippo"
-user1@user:~ safepwd -u john "password di pippo"
+user1@user:~ safepwd -n john "john's password"
+user1@user:~ safepwd -u john "john's password"
 
 safepwd@john: help
     <options>
