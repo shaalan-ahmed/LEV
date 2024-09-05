@@ -2,37 +2,43 @@ user1@user:~ lev help
     store your password safely with Locally Encrypted Vault (LEV)
 
     <options>
-        help -> look at options 
+        help: look at options 
 
-        new -> register new user
-            usage -> new <username> <password>
+        new: register new user
+            usage: new <username> <password>
 
-        login -> login to existing user
-            usage -> login <username> <password>
+        login: login to existing user
+            usage: login <username> <password>
 
-        delete -> delete existing user
-            usage -> delete <username> <password>
+        delete: delete existing user
+            usage: delete <username> <password>
 
-        exit -> quit lev
+        exit: quit lev
 
 user1@user:~ lev new john "john's password"
 user1@user:~ lev login john "john's password"
 
 lev@john: help
     <options>
-        list -> list entries
-            usage -> list
+        list: list entries
+            usage: list
 
-        add -> add new entry
-            usage -> add
+        add: add new entry
+            usage: add <name> <url> <password>
 
-        rm -> remove existing entry
-            usage -> rm <EntryName>
+        rm: remove existing entry
+            usage: rm <name>
 
-        search -> prints entry
-            usage -> search <EntryName>
+        search: prints entries containing <query> using fuzzy search
+            usage: search <query>
 
-        edit -> edit existing entry
-            usage -> edit <EntryName>
+        edit: edit existing entry
+            usage: edit <name> <newname> <newurl> <newpassword>
 
-        exit -> quit lev
+        copy: copies the password of an entry
+            usage: copy <name>
+
+        gen: generates a secure password and copies it to user's clipboard
+            usage: gen
+
+        exit: quit lev
