@@ -1,44 +1,103 @@
-user1@user:~ lev help
-    store your password safely with Locally Encrypted Vault (LEV)
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+$ lev                                                                    
+    Store your passwords safely with Locally Encrypted Vault (LEV)       
+    Run 'lev init' to get started                                        
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+$ lev init
+    Master Password: mypassword123
+    Session duration (in minutes): 5
+    LEV init success!! Run 'lev help' to get started
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+$ lev help
+    Usage: lev <command> 
 
-    <options>
-        help: look at options 
+    <commands>
+        help: Get help for commands
+            Usage: lev help        
 
-        new: register new user
-            usage: new <username> <password>
+        set: Change the master password
+            Usage: lev set 
+            Prompts: 
+                <old master password> - The current master password
+                <new master password> - The new master password
 
-        login: login to existing user
-            usage: login <username> <password>
+        time: Change the session duration
+            Usage: lev time 
+            Prompts: 
+                <duration in mins> - New session duration in minutes
 
-        delete: delete existing user
-            usage: delete <username> <password>
+        list: List all entries
+            Usage: lev list
+            Description: Displays all stored password entries
 
-        exit: quit lev
+        add: Add a new entry
+            Usage: lev add 
+            Prompts: 
+                <name> - The name of the entry 
+                <url> - The URL associated with the entry 
+                <password> - The password for the entry
 
-user1@user:~ lev new john "john's password"
-user1@user:~ lev login john "john's password"
+        remove: Remove an existing entry
+            Usage: lev remove 
+            Prompts: 
+                <name> - The name of the entry to remove
 
-lev@john: help
-    <options>
-        list: list entries
-            usage: list
+        search: Search entries containing a query using fuzzy search
+            Usage: lev search 
+            Prompts: 
+                <query> - The search query to find entries
 
-        add: add new entry
-            usage: add <name> <url> <password>
+        edit: Edit an existing entry
+            Usage: lev edit 
+            Prompts: 
+                <name> - The current name of the entry
+                <newname> - The new name for the entry
+                <newurl> - The new URL for the entry
+                <newpassword> - The new password for the entry
 
-        rm: remove existing entry
-            usage: rm <name>
+        copy: Copy the password of an entry to clipboard
+            Usage: lev copy 
+            Prompts: 
+                <name> - The name of the entry whose password will be copied
 
-        search: prints entries containing <query> using fuzzy search
-            usage: search <query>
+        gen: Generate a secure password and copy it to the clipboard
+            Usage: lev gen
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+$ lev add
+    name: Google Account
+    url: www.google.com
+    password: myG00gleP@ssw0rd
 
-        edit: edit existing entry
-            usage: edit <name> <newname> <newurl> <newpassword>
+    Entry added successfully!
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+$ lev list
+    1. Google Account - www.google.com
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+$ lev copy
+    name: Google Account
 
-        copy: copies the password of an entry
-            usage: copy <name>
+    Password for 'Google Account' copied to clipboard!
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+$ lev gen
+    Generated password: R9s^8Lx!2vMw
 
-        gen: generates a secure password and copies it to user's clipboard
-            usage: gen
+    Password copied to clipboard!
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+$ lev search
+    query: Google
 
-        exit: quit lev
+    1. Google Account - www.google.com
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+$ lev edit
+    name: Google Account
+    newname: Google Email
+    newurl: www.google.com
+    newpassword: newG00gleP@ssw0rd
+    
+    Entry updated successfully!
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+$ lev remove
+    name: Google Email
+
+    Entry 'Google Email' removed successfully!
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
