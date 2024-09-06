@@ -1,7 +1,22 @@
 #include "../Declarations/declarations.h"
 
-int main () {
-    
+string arguments[] = {
+    "init", 
+    "help",
+    "add",
+    "remove",
+    "list",
+    "copy",
+    "gen",
+    "search",
+    "edit",
+    "send"
+};
+
+int main (int argc, char *argv[]) {
+    if (argc == 1) {
+        printWelcomeText();
+    }   
     
     return 0;
 }

@@ -79,8 +79,6 @@ $ lev copy
     Password for 'Google Account' copied to clipboard!
 ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 $ lev gen
-    Generated password: R9s^8Lx!2vMw
-
     Password copied to clipboard!
 ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 $ lev search
@@ -100,4 +98,9 @@ $ lev remove
     name: Google Email
 
     Entry 'Google Email' removed successfully!
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+$ lev send
+    e-mail: john.doe@gmail.com
+
+    list sent to john.doe@gmail.com
 ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――

@@ -7,7 +7,7 @@ compiler=g++
 main=../Main/main.cpp
 declarations=../Declarations/declarations.cpp
 
-executable=main
+executable=lev
 
 list="$declarations "
 
@@ -19,7 +19,3 @@ for entry in ../Classes/*; do
 done
 
 $compiler $main $list -o $executable
-
-./$executable
-
-rm $executable
