@@ -3,6 +3,7 @@
 #include <iostream>
 #include <iomanip>
 #include <string>
+#include <array>
 
 using namespace std;
 
@@ -18,6 +19,11 @@ using namespace std;
 #define UNDERLINE 4
 #define NOSTYLE 0
 
+#define LEN 10
+
 void printWelcomeText();
+void printInvalidCommand();
 
 string makeAnsii(int fg, int style);
+
+bool isLevCommand(string command, array<string, 10> arr);

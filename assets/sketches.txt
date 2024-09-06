@@ -1,12 +1,12 @@
 ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 $ lev                                                                    
     Store your passwords safely with Locally Encrypted Vault (LEV)       
-    Run 'lev init' to get started                                        
+    Run "lev init" to get started                                        
 ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 $ lev init
     Master Password: mypassword123
     Session duration (in minutes): 5
-    LEV init success!! Run 'lev help' to get started
+    LEV init success!! Run "lev help" to get started
 ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 $ lev help
     Usage: lev <command> 
@@ -76,7 +76,7 @@ $ lev list
 $ lev copy
     name: Google Account
 
-    Password for 'Google Account' copied to clipboard!
+    Password for "Google Account" copied to clipboard!
 ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 $ lev gen
     Password copied to clipboard!
@@ -91,13 +91,13 @@ $ lev edit
     newname: Google Email
     newurl: www.google.com
     newpassword: newG00gleP@ssw0rd
-    
+        
     Entry updated successfully!
 ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 $ lev remove
     name: Google Email
 
-    Entry 'Google Email' removed successfully!
+    Entry "Google Email" removed successfully!
 ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 $ lev send
     e-mail: john.doe@gmail.com
