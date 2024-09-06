@@ -13,9 +13,15 @@ $ lev help
 
     <commands>
         help: Get help for commands
-            Usage: lev help        
+            Usage: lev help 
+            
+        init: Initialize your lev Account
+            Usage: lev init
+            Prompts: 
+                <master password> - Your master password
+                <session duration> - The duration in minutes of a session
 
-        set: Change the master password
+        master: Change the master password
             Usage: lev set 
             Prompts: 
                 <old master password> - The current master password
@@ -91,7 +97,7 @@ $ lev edit
     newname: Google Email
     newurl: www.google.com
     newpassword: newG00gleP@ssw0rd
-        
+
     Entry updated successfully!
 ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 $ lev remove

@@ -4,6 +4,8 @@
 #include <iomanip>
 #include <string>
 #include <array>
+#include <filesystem>
+#include <fstream>
 
 using namespace std;
 
@@ -22,7 +24,13 @@ using namespace std;
 #define LEN 10
 
 void printWelcomeText();
+void printStartText();
 void printInvalidCommand();
+void printMustInit();
+void printInvalidInput();
+void printConfigIsFull();
+
+int initUser(string* master_password, int* session_duration);
 
 string makeAnsii(int fg, int style);
 
