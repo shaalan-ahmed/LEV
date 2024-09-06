@@ -104,3 +104,5 @@ $ lev send
 
     list sent to john.doe@gmail.com
 ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+
+If using a lev command and the session has expired, the user will be promted to re-enter tha master password
