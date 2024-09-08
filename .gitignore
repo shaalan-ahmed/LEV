@@ -1,1 +1,3 @@
-./src/Commands/*
+src/Commands/*
+!src/Commands/make.sh
+!src/Commands/newClass.sh

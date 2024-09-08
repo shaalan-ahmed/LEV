@@ -29,6 +29,7 @@ void printInvalidCommand();
 void printMustInit();
 void printInvalidInput();
 void printConfigIsFull();
+void printHelp();
 
 int initUser(string* master_password, int* session_duration);
 

@@ -77,6 +77,12 @@ int main (int argc, char *argv[]) {
         return 0;
     }
 
+    if (cmd == "help") {
+        printHelp();
+
+        return 0;
+    }
+
     if (must_init) {
         printMustInit();
 
