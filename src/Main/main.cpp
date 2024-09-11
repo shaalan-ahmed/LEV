@@ -24,7 +24,7 @@ int session_duration = 0;
 
 ofstream file;
 
-int main (int argc, char *argv[]) {
+int main (int argc, char *argv[]) { 
     if (! filesystem::exists(hidden_dir)) {
         filesystem::create_directory(hidden_dir);
 

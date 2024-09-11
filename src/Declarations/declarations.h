@@ -17,7 +17,7 @@ using namespace std;
 #define MAGENTA_FG 35
 #define CYAN_FG 36
 #define WHITE_FG 37
-#define BOLD 1
+#define BOLD 1/home/ahmed/Desktop/C++/High_Level_Utilities/src/Declarations/declarations.cpp /home/ahmed/Desktop/C++/High_Level_Utilities/src/Declarations/declarations.h
 #define UNDERLINE 4
 #define NOSTYLE 0
 
